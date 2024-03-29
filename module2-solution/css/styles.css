@@ -1,0 +1,58 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: monospace;
+}
+div {
+    width: 100%;
+}
+h1 {
+    text-align: center;
+}
+section {
+    padding: 2em;
+    margin: 0.5em;
+    border: 2px solid black;
+    width: 31.5%;
+    font-size: 14px;
+    float: left;
+    position: relative;
+    background-color: #999999;
+}
+span {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    border: 1px solid black;
+    padding: 0.3em 2em;
+}
+p {
+    padding-top: 0.5em;
+}
+section:nth-child(2) span {
+    background-color: #d59898;
+}
+section:nth-child(3) span {
+    background-color: #c14543;
+    color: white;
+}
+section:nth-child(4) span {
+    background-color: #e5d198;
+}
+
+/*responsiveness begins here*/
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    section {
+        width: 48%;
+    }
+    section:nth-child(4) {
+        width: 97.5%;
+    }
+}
+@media screen and (max-width: 768px) {
+    section {
+        width: 97.5%;
+    }
+}
